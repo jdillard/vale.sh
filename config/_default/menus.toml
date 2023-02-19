@@ -1,9 +1,3 @@
-[[community]]
-identifier = "about"
-name = "Community"
-weight = 10
-# url = "/about/"
-
 [[docs]]
 identifier = "vale-cli"
 name = "Vale CLI"
@@ -21,6 +15,12 @@ identifier = "integrations"
 name = "Integrations"
 url = "/docs/integrations/"
 weight = 40
+
+[[docs]]
+identifier = "community"
+name = "Community"
+weight = 50
+url = "/docs/community/"
 
 [[docs]]
 identifier = "emacs"

@@ -1,7 +1,7 @@
 ---
 - source: https://github.com/angular/angular/tree/main/aio/tools/doc-linter
   info: The modern web developer’s platform
-  org: https://github.com/angular/angular
+  org: https://github.com/angular
   name: Angular
 - source: https://docs.gitlab.com/ee/development/documentation/testing.html#vale
   info: An extensive Vale configuration for various GitLab projects.
