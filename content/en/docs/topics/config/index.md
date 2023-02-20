@@ -236,6 +236,10 @@ This is some text
 .. vale on
 ```
 
+{{< alert icon="👉" >}}
+Commenting out headers/headings isn't supported at this time.
+{{< /alert >}}
+
 ### AsciiDoc
 
 AsciiDoc uses HTML-style comments with its pass-through functionality:
