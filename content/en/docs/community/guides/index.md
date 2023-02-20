@@ -1,14 +1,13 @@
 ---
 title: Guides & Tutorials
-description: "Answers to frequently asked questions."
+lead: "Answers to frequently asked questions."
 draft: false
 images: []
 menu:
-  community:
-    parent: about
-weight: 20
-toc: false
-type: docs
+  docs:
+    parent: community
+weight: 210
+toc: true
 ---
 
 Check out the user-contributed resources below. Have your own video, post, or
