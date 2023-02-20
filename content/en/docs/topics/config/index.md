@@ -237,7 +237,8 @@ This is some text
 ```
 
 {{< alert icon="👉" >}}
-Commenting out headers/headings isn't supported at this time.
+Commenting out headers/headings aren't currently supported. See [issues/340](https://github.com/errata-ai/vale/issues/340) for more information.
+
 {{< /alert >}}
 
 ### AsciiDoc
