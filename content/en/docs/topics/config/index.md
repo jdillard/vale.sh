@@ -200,54 +200,42 @@ to HTML.
 
 ## Markup-based configuration
 
+### In-text configuration
+
 You can use selective, in-text configuration through markup comments in certain
 formats. The follow sections describe the comment style required for each
 supported format.
 
-### Markdown &amp; HTML
+{{< tabs in-text-config >}}
 
-Markdown and HTML use HTML-style comments:
+### Configuration file
 
-```markup
-<!-- vale off -->
+#### reStructuredText
 
-This is some text
+Support for Sphinx's superset of reStructuredText. In order to make use of this
+feature, you need to define `SphinxBuildPath` (and, optionally, `SphinxAutoBuild`)
+in your config file:
 
-more text here...
+##### SphinxBuildPath
 
-<!-- vale on -->
+The path to your `_build` directory, relative to the `.vale.ini` file.
 
-<!-- vale Style.Rule = NO -->
+##### SphinxAutoBuild
 
-This is some text
+The command that builds your site,`make html` is the default for Sphinx.
 
-<!-- vale Style.Rule = YES -->
-```
+If this is defined, Vale will re-build your site prior to linting any content
+-- which makes it possible to use Sphinx and Vale in lint-on-the-fly
+environments (e.g., text editors) at the cost of performance.
 
-### reStructuredText
+```ini
+MinAlertLevel = suggestion
 
-reStructuredText uses its own comment style:
+SphinxBuildPath = _build
+SphinxAutoBuild = make html
 
-```text
-.. vale off
-
-This is some text
-
-.. vale on
-```
-
-### AsciiDoc
-
-AsciiDoc uses HTML-style comments with its pass-through functionality:
-
-```text
-pass:[<!-- vale Microsoft.GenderBias = NO -->]
-
-This steward is ignored.
-
-pass:[<!-- vale Microsoft.GenderBias = YES -->]
-
-This is a steward that raises an alert.
+[*.rst]
+BasedOnStyles = Vale
 ```
 
 ## Search process
